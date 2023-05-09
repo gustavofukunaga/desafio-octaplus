@@ -22,6 +22,7 @@ int search(vector<int> &v, int x) {
 // k for superior ou igual ao comprimento do vetor v, preencher as posições até
 // o índice k com o valor 0.
 void insert(vector<int> &v, int x, int k) {
+  cout << "insert " << x << " no indice " << k << endl;
   if (k >= v.size()) {
     for (int i = v.size(); i <= k; i++) {
       if (i == k)
@@ -73,14 +74,12 @@ int main() {
   cout << "search 2 = " << rs << endl << endl;
 
   //- insert(v, 2, 3)
-  cout << "insert 2 no indice 3" << endl;
   insert(v, 2, 3);
 
   //- imprime v
   printVector(v);
 
   //- insert(v, 10, 10)
-  cout << "insert 10 no indice 10" << endl;
   insert(v, 10, 10);
 
   //- imprime v
