@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ostream>
 #include <vector>
 using namespace std;
 
@@ -37,11 +36,6 @@ int remove(vector<int> v, int x) {
   for (int i = 0; i < v.size(); i++)
     if (v[i] == x) {
       v.erase(v.begin() + i);
-      cout << "vector = ";
-      for (auto it = v.begin(); it != v.end(); ++it)
-        cout << ' ' << *it;
-      cout << endl;
-
       return x;
     }
 
